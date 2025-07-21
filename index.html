@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Whack-a-mole</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="index.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whack-A-Mole</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body> 
-  <h1 id="score">0</h1>
-  <div id="whack-a-mole">
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
-    <div class="hole"></div>
+<body>
+  <div class="landing">
+    <img src="./images/play.png" alt="icon" class="icon-top-left" />
+    <img src="./images/x.png" alt="icon" class="icon-bottom-left" />
+    <img src="./images/tri.png" alt="icon" class="icon-bottom-middle" />
+    <img src="./images/molefinal.svg" alt="WHACK!" class="whack-image" />
+    <div class="title-bar">MOLE</div>
+    <button class="start-button" id="start-btn">Start</button>
   </div>
+  <script>
+    document.getElementById('start-btn').addEventListener('click', function () {
+      window.location.href = 'home.html'; // Takes you to game page
+    });
+  </script>
+
 </body>
 </html>
